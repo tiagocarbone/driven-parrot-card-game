@@ -121,6 +121,19 @@ function finalDeJogo(contadorJogadaUsuário){
 
 function viraCarta(carta) {
 
+    if(carta.classList.contains("click") == false){
+         carta.classList.add("click")
+        
+        contaJogada++;
+        contadorJogadaUsuário++;
+        if (contaJogada == 2){
+            setTimeout(verificaJogada, 1000);     
+            
+        }
+    }
+   
+    
+    /*    
     if(carta.classList.contains("click")){
         carta.classList.remove("click");
         contaJogada--;
@@ -137,6 +150,7 @@ function viraCarta(carta) {
             setTimeout(verificaJogada, 1000);        
         }
     }
-
+    
+*/
    
 }
